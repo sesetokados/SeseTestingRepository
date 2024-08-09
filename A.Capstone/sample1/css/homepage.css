@@ -1,0 +1,112 @@
+body {
+    background-color: #731515;
+}
+
+.sidenav {
+    height: 100%;
+    width: 80px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #731515;
+    overflow-x: hidden;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Aligns content to the bottom */
+  }
+  
+  .sidenav img {
+    width: 20px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    margin-left: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  /* Add hover effect to the a element */
+  .sidenav a:hover {
+    background-color: #B38080; /* Hover background color */
+    border-radius: 50px; /* Optional: add rounded corners */
+  }
+  
+  .vertical-title {
+    position: fixed;
+    font-family: "DM Serif Display", serif;
+    top: 40%;
+    left: 80px; /* Adjust this based on your sidebar width */
+    transform: translate(-50%, -50%) rotate(-90deg);
+    transform-origin: left top;
+    font-size: 40px;
+    color: #FFFFFF;
+  }
+
+  .homepage {
+    position: relative;
+    width: 80%; /* Adjust as needed */
+    margin-left: 80px;
+    margin-top: 0px; /* Optional: Add margin to create space */
+  }
+  
+  .homepage img, .homepage2 img {
+    object-fit: cover;
+    opacity: 0.4;
+    filter: blur(3px);
+  }
+
+  .homepage img, .homepage2 img {
+    width: 100%; /* Ensure the image doesn't exceed its container */
+    height: 40%;
+  }
+
+  .homepage2 img {
+    width: 100%; /* Ensure the image doesn't exceed its container */
+    height: 40%;
+  }
+  
+  .hp-text, .hp2-text {
+    position: absolute;
+    font-family: "DM Serif Display", serif;
+    color: #FFFFFF;
+    text-align: center;
+    opacity: 1; /* Ensure text is fully opaque */
+    z-index: 1; /* Ensure the text is on top of the image */
+  }
+
+  .hp-text {
+    position: absolute;
+    top: 30%;
+    left: 3%;
+    right: 4%;
+    font-size: 50px;
+  }
+
+  .hp2-text {
+    position: absolute;
+    top: 25%;
+    left: 30%;
+    right: 26%;
+    font-size: 25px;
+  }
+
+  .login-btn {
+    position: fixed;
+    height: 8%;
+    width: 80%; /* Adjust width as needed */
+    top: 30%;
+    max-width: 110px; /* Optional: set a maximum width */
+    margin-left: 490px;
+    margin-top: 170px;
+    padding: 10px; /* Add padding inside the container */
+    border-radius: 15px; /* Rounded corners */
+    background-color: #731F1F; /* Background color */
+    font-family: "DM Serif Display", serif;
+    font-size: 22px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }

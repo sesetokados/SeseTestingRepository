@@ -1,0 +1,122 @@
+.sidenav {
+  height: 100%;
+  width: 80px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #731515;
+  overflow-x: hidden;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Aligns content to the bottom */
+}
+
+.sidenav img {
+  width: 20px; /* Adjust width as needed */
+  height: auto; /* Maintain aspect ratio */
+  display: block;
+  margin-left: 25px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* Add hover effect to the a element */
+.sidenav a:hover {
+  background-color: #B38080; /* Hover background color */
+  border-radius: 50px; /* Optional: add rounded corners */
+}
+
+.vertical-title {
+  position: fixed;
+  font-family: "DM Serif Display", serif;
+  top: 40%;
+  left: 80px; /* Adjust this based on your sidebar width */
+  transform: translate(-50%, -50%) rotate(-90deg);
+  transform-origin: left top;
+  font-size: 40px;
+  color: #FFFFFF;
+}
+
+.content {
+  margin-left: 100px;
+}
+
+.book-details-container {
+  display: flex;
+  align-items: flex-start; /* Aligns items at the start vertically */
+  margin-top: 20px;
+}
+
+.book-cover {
+  width: 150px; /* Adjust width as needed */
+  display: inline-block; /* Ensures elements stay in line */
+  margin: 10px; /* Optional: Add margin for spacing */
+  border: 1px solid #000000; /* Border style */
+}
+
+.book-cover img {
+  width: 100%; /* Ensure the image takes up the full width of its container */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Remove any default inline spaces */
+}
+
+.book-title, .title {
+  margin-left: 20px;
+  font-family: "DM Serif Display", serif;
+}
+
+.book-title { 
+  margin-top: 30px;
+  color: #575757;
+}
+
+.title {
+  margin-top: -15px;
+  color: #000000;
+  font-size: 40px;
+}
+
+.description {
+  color: #fff; /* White text for better contrast */
+  font-size: 1.5em; /* Set font size */
+  margin-bottom: 20px;
+  font-style: italic; /* Make the text italic */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+label {
+  font-weight: bold;
+  color: #fff; /* White text for better contrast */
+  font-size: 1.5em; /* Enlarge the font size */
+  margin-bottom: 5px;
+}
+
+input {
+  padding: 8px;
+  border: 1px solid #fff; /* White border */
+  border-radius: 6px;
+  width: 100%; /* Ensure the input fields occupy full width */
+  max-width: 600px; /* Set a larger maximum width for the input fields */
+  box-sizing: border-box;
+  background-color: rgb(255, 255, 255); /* Light background for input */
+  font-size: 1.2em; /* Enlarge the font size */
+}
+
+button {
+  background-color: #a28622;
+  color: #ffffff;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.5em; /* Enlarge the font size */
+}

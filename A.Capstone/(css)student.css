@@ -1,0 +1,160 @@
+.sidenav {
+  height: 100%;
+  width: 80px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #731515;
+  overflow-x: hidden;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Aligns content to the bottom */
+}
+
+.sidenav img {
+  width: 20px; /* Adjust width as needed */
+  height: auto; /* Maintain aspect ratio */
+  display: block;
+  margin-left: 25px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* Add hover effect to the a element */
+.sidenav a:hover {
+  background-color: #B38080; /* Hover background color */
+  border-radius: 50px; /* Optional: add rounded corners */
+}
+
+.vertical-title {
+  position: fixed;
+  font-family: "DM Serif Display", serif;
+  top: 40%;
+  left: 80px; /* Adjust this based on your sidebar width */
+  transform: translate(-50%, -50%) rotate(-90deg);
+  transform-origin: left top;
+  font-size: 40px;
+  color: #FFFFFF;
+}
+
+.bodey {
+  position: fixed;
+  font-family: "DM Serif Display", serif;
+  top: 7%;
+  margin-left: 130px;
+  font-size: 40px;
+  color: #000000;
+}
+
+.circle {
+  width: 150px; /* Adjust size as needed */
+  height: 150px; /* Same as width to maintain circular shape */
+  background-color: #D9D9D9; /* Circle color */
+  border-radius: 50%;
+  margin-left: 145px;
+  margin-top: 120px;
+}
+
+.add-photo {
+  position: fixed;
+  height: 5%;
+  width: 80%; /* Adjust width as needed */
+  top: 22%;
+  max-width: 100px; /* Optional: set a maximum width */
+  margin-left: 170px;
+  margin-top: 160px;
+  padding: 10px; /* Add padding inside the container */
+  border-radius: 20px; /* Rounded corners */
+  background-color: #6BA358; /* Background color */
+  font-family: "DM Serif Display", serif;
+  font-size: 14px;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.acc-type {
+  position: fixed;
+  font-family: "DM Serif Display", serif;
+  top: 20%;
+  margin-left: 400px;
+  font-size: 20px;
+  color: #000000;
+}
+
+.uname {
+  position: fixed;
+  font-family: "DM Serif Display", serif;
+  top: 35%;
+  margin-left: 400px;
+  font-size: 20px;
+  color: #000000;
+}
+
+.fname {
+  position: fixed;
+  font-family: "DM Serif Display", serif;
+  top: 50%;
+  margin-left: 400px;
+  font-size: 20px;
+  color: #000000;
+}
+
+.mname {
+  position: fixed;
+  font-family: "DM Serif Display", serif;
+  top: 65%;
+  margin-left: 400px;
+  font-size: 20px;
+  color: #000000;
+}
+
+.lname {
+  position: fixed;
+  font-family: "DM Serif Display", serif;
+  top: 80%;
+  margin-left: 400px;
+  font-size: 20px;
+  color: #000000;
+}
+
+.acc-type-box, .uname-box, .fname-box, .mname-box, .lname-box {
+  position: fixed;
+  margin-left: 550px; /* Center the container and add margin */
+  padding: 20px; /* Add padding inside the container */
+  border-radius: 10px; /* Rounded corners */
+  background-color: #BBBBBB; /* Background color */
+}
+
+.acc-type-box {
+  width: 80%; /* Adjust width as needed */
+  top: 19.5%;
+  max-width: 200px; /* Optional: set a maximum width */
+}
+
+.uname-box {
+  width: 80%; /* Adjust width as needed */
+  top: 34%;
+  max-width: 200px; /* Optional: set a maximum width */
+}
+
+.fname-box, .mname-box, .lname-box {
+  width: 80%; /* Adjust width as needed */
+  max-width: 300px;
+}
+
+.fname-box {
+  top: 49%;
+}
+
+.mname-box {
+  top: 64%;
+}
+
+.lname-box {
+  top: 79%;
+}

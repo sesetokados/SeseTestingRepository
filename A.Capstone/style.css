@@ -1,0 +1,196 @@
+.sidenav {
+  height: 100%;
+  width: 80px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #731515;
+  overflow-x: hidden;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Aligns content to the bottom */
+}
+
+.sidenav img {
+  width: 20px; /* Adjust width as needed */
+  height: auto; /* Maintain aspect ratio */
+  display: block;
+  margin-left: 25px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* Add hover effect to the a element */
+.sidenav a:hover {
+  background-color: #B38080; /* Hover background color */
+  border-radius: 50px; /* Optional: add rounded corners */
+}
+
+.vertical-title {
+  position: fixed;
+  font-family: "DM Serif Display", serif;
+  top: 40%;
+  left: 80px; /* Adjust this based on your sidebar width */
+  transform: translate(-50%, -50%) rotate(-90deg);
+  transform-origin: left top;
+  font-size: 40px;
+  color: #FFFFFF;
+}
+  
+  .search-container {
+    position: fixed;
+    width: 250px; /* Adjust width as needed */
+    top: 10%; /* Adjust vertical position */
+    left: 50%;
+    transform: translateX(-50%); /* Center horizontally */
+    z-index: 2;
+    display: flex;
+    align-items: center; /* Align items vertically */
+    background-color: #fff; /* Background color for container */
+    border: 1px solid #000000;
+    border-radius: 5px;
+    padding: 2px;
+  }
+  
+  .search {
+    width: calc(100% - 40px); /* Adjust width to fit the container */
+    padding: 10px;
+    font-family: "DM Serif Display", serif;
+    height: 20px;
+    border: none; /* Remove border */
+    outline: none; /* Remove outline */
+  }
+  
+  .search-submit {
+    width: 25px; /* Adjust width of the icon */
+    height: 25px; /* Adjust height of the icon */
+    border: none; /* Remove border */
+    background: none; /* Remove background */
+    cursor: pointer; /* Show pointer cursor on hover */
+  }
+  
+  .search-submit img {
+    width: 100%; /* Make the image fit the button */
+    height: 100%;
+  }
+  
+  .horizontal-line {
+    margin-left: 80px; /* Adjust to align with content */
+    width: calc(100% - 160px); /* Full width minus sidebar */
+    height: 0.5px; /* Thickness of the horizontal line */
+    background-color: #ccc; /* Color of the horizontal line */
+  }
+  
+  .bodey {
+    position: fixed;
+    font-family: "DM Serif Display", serif;
+    top: 10%; /* Adjust to place below the title */
+    left: 100px; /* Align with content */
+    font-size: 40px;
+    color: #000000;
+    z-index: 1; /* Ensure it's above other content */
+  }
+  
+  .card-bodey {
+    margin: 150px auto; /* Center the container horizontally with additional margin */
+    padding: 1px; /* Padding inside the container */
+    border: transparent; /* Border around the container */
+    border-radius: 5px; /* Optional: rounded corners */
+    background-color: transparent; /* Background color */
+    width: calc(100% - 200px); /* Adjust width to fit within the layout */
+    display: flex;
+    flex-wrap: wrap; /* Wrap items to fit the container */
+    justify-content: center; /* Center the content */
+    text-align: center; /* Center text inside the book details */
+    box-sizing: border-box; /* Ensure padding is included in width */
+  }
+  
+  .card-bodey table {
+    width: 100%; /* Full width of the container */
+    border-collapse: collapse; /* Collapses borders into a single border */
+    font-family: "DM Serif Display", serif;
+    font-size: 12px; /* Adjust font size for smaller display */
+  }
+  
+  .card-bodey th, .card-bodey td {
+    border: 1px solid #ddd; /* Border color and style */
+    padding: 5px; /* Padding inside cells */
+    text-align: center; /* Align text to the center */
+  }
+  
+  .card-bodey th {
+    background-color: #f4f4f4; /* Header background color */
+  }
+  
+  .card-bodey tr:nth-child(even) {
+    background-color: #f2f2f2; /* Stripe rows with background color */
+  }
+  
+  .card-bodey tr:hover {
+    background-color: #e0e0e0; /* Highlight row on hover */
+  }
+  
+  .book-container {
+    text-align: center;
+    margin: 10px 0; /* Reduce space between books */
+  }
+  
+  .book-image {
+    width: 100px; /* Reduce size to fit under the title */
+    height: auto;
+  }
+  
+  .book-details {
+    margin-top: 5px; /* Space between image and text */
+  }
+  
+  .book-title {
+    font-size: 12px; /* Adjust font size */
+    font-weight: bold;
+  }
+  
+  .book-author {
+    font-size: 10px; /* Adjust font size */
+    color: #555;
+  }
+  
+  /* Optional: Responsive Design */
+  @media (max-width: 768px) {
+    .card-bodey table, .card-bodey th, .card-bodey td {
+      display: block; /* Stack cells vertically */
+      width: 100%; /* Full width */
+      box-sizing: border-box; /* Include padding and border in the width */
+    }
+  
+    .card-bodey th {
+      position: absolute; /* Position headers outside of table */
+      top: -9999px; /* Hide headers */
+      left: -9999px;
+    }
+  
+    .card-bodey tr {
+      border: 1px solid #ddd; /* Add border to rows */
+      display: block;
+      margin-bottom: 10px; /* Space between rows */
+    }
+  
+    .card-bodey td {
+      border: none;
+      position: relative;
+      padding-left: 50%; /* Space for labels */
+      text-align: right;
+    }
+  
+    .card-bodey td::before {
+      content: attr(data-label); /* Label for each cell */
+      position: absolute;
+      left: 0;
+      width: 45%; /* Space for label */
+      padding-right: 10px; /* Space between label and value */
+      white-space: nowrap; /* Prevent text wrapping */
+      font-weight: bold; /* Make label text bold */
+    }
+  }
+  

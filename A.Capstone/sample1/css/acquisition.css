@@ -1,0 +1,115 @@
+.sidenav {
+    height: 100%;
+    width: 80px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #731515;
+    overflow-x: hidden;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Aligns content to the bottom */
+  }
+  
+  .sidenav img {
+    width: 20px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    margin-left: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  /* Add hover effect to the a element */
+  .sidenav a:hover {
+    background-color: #B38080; /* Hover background color */
+    border-radius: 50px; /* Optional: add rounded corners */
+  }
+  
+  .vertical-title {
+    position: fixed;
+    font-family: "DM Serif Display", serif;
+    top: 40%;
+    left: 80px; /* Adjust this based on your sidebar width */
+    transform: translate(-50%, -50%) rotate(-90deg);
+    transform-origin: left top;
+    font-size: 40px;
+    color: #FFFFFF;
+  }
+    .header {
+    font-family: "Times New Roman", Times, serif;
+    position: absolute;
+    top: 50px;
+    left: 200px;
+  }
+    h1{
+        font-size: 55px;
+        font-weight: bold;
+    }
+  .form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-family: "Times New Roman", Times, serif;
+  }
+  .form-group label {
+    width: 120px; /* Increased width for labels */
+    margin-right: 10px; /* Space between label and input */
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .form-group input {
+    flex: 1;
+    width: 200px; /* Adjust input width */
+    height: 30px; /* Adjust input height */
+    padding: 5px; /* Add padding inside the input field */
+    background-color: #d9d9d9;
+    border: none;
+  }
+  .container {
+    width: 480px; /* Fixed width of the container */
+    margin-left: 560px; /* Pushes the container to the right */
+    padding: 20px; /* Optional padding inside the container */
+    margin-top: 140px;
+  }
+    .btn-custom {
+    background-color:  #39ac39; /* Custom background color */
+    color: white; /* Text color */
+    border-radius: 20px;
+    padding: 0px 8px; /* Padding inside the button */
+    font-size: 18px; /* Font size */
+      font-family: "Times New Roman", Times, serif;
+    margin-left: 130px;
+  }
+  .btn-custom:hover {
+    background-color: #218838; /* Darker shade for hover effect */
+  }
+  .btn-danger-custom {
+    background-color: #660000;
+    color: white;
+    border-radius: 12px; /* Custom border radius for Cancel button */
+    padding: 5px 23px;
+    font-size: 18px;
+    font-family: "Times New Roman", Times, serif;
+    border: none;
+      margin-right: 10px;
+      position: center;
+      margin-left: 160px;
+  }
+  .btn-danger-custom:hover {
+    background-color: #4d0000; /* Darker shade for hover effect */
+  }
+    .btn-success-custom {
+    background-color: #39ac39;
+    color: white;
+    border-radius: 12px; /* Custom border radius for Cancel button */
+    padding: 5px 30px;
+    font-size: 18px;
+    font-family: "Times New Roman", Times, serif;
+    border: none;
+  }
+  .btn-success-custom:hover {
+    background-color: #218838; /* Darker shade for hover effect */
+  }

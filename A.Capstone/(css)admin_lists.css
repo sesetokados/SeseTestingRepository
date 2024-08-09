@@ -1,0 +1,200 @@
+.sidenav {
+  height: 100%;
+  width: 80px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #731515;
+  overflow-x: hidden;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Aligns content to the bottom */
+}
+
+.sidenav img {
+  width: 20px; /* Adjust width as needed */
+  height: auto; /* Maintain aspect ratio */
+  display: block;
+  margin-left: 25px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* Add hover effect to the a element */
+.sidenav a:hover {
+  background-color: #B38080; /* Hover background color */
+  border-radius: 50px; /* Optional: add rounded corners */
+}
+
+.vertical-title {
+  position: fixed;
+  font-family: "DM Serif Display", serif;
+  top: 40%;
+  left: 80px; /* Adjust this based on your sidebar width */
+  transform: translate(-50%, -50%) rotate(-90deg);
+  transform-origin: left top;
+  font-size: 40px;
+  color: #FFFFFF;
+}
+
+.search-container {
+  position: fixed;
+  right: 20px; /* Adjust based on the desired position */
+  top: 5%;
+  width: 300px; /* Adjust width as needed */
+  z-index: 2;
+  display: flex;
+  align-items: center; /* Align items vertically */
+}
+
+.search {
+  width: 260px; /* Adjust width to fit image */
+  padding: 10px;
+  box-sizing: border-box;
+  font-family: "DM Serif Display", serif;
+  height: 40px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.search::placeholder {
+  color: #888; /* Placeholder color */
+  font-style: italic;
+}
+
+.search-submit {
+  position: absolute;
+  right: 50px; /* Position image inside the input field */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px; /* Adjust width of the image */
+  height: 20px; /* Adjust height of the image */
+  border: none; /* Remove border */
+  background: none; /* Remove background */
+  cursor: pointer; /* Show pointer cursor on hover */
+}
+
+.button-group {
+  display: flex;
+  gap: 30px; /* Space between buttons */
+  margin-left: 150px;
+  margin-top: 20px;
+}
+
+.button-group button {
+  padding: 10px 15px;
+  border: none;
+  background-color: #FFFFFF;
+  color: #000000;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "DM Serif Display", serif;
+  font-size: 25px;
+}
+
+.button-group button:hover {
+  background-color: #D9D9D9;
+}
+
+.button-separator {
+  width: 1px; /* Width of the straight line */
+  height: 50px; /* Height of the line */
+  background-color: #ccc; /* Color of the straight line */
+  margin: 0 10px; /* Space around the line */
+}
+
+.horizontal-line {
+  margin-left: 90px;
+  bottom: 20px; /* Position below the button group */
+  width: 65%;
+  height: 0.5px; /* Thickness of the horizontal line */
+  background-color: #ccc; /* Color of the horizontal line */
+}
+
+.bodey {
+  position: fixed;
+  font-family: "DM Serif Display", serif;
+  top: 15%;
+  margin-left: 100px;
+  font-size: 40px;
+  color: #000000;
+}
+
+/* Table Container */
+.card-bodey {
+  margin: 10px; /* Margin around the table container */
+  padding: 5px; /* Padding inside the container */
+  border: 1px solid #ddd; /* Border around the container */
+  border-radius: 5px; /* Optional: rounded corners */
+  background-color: #f9f9f9; /* Background color */
+  margin-left: 100px;
+  margin-top: 70px;
+  width: 88%;
+}
+
+/* Table Styling */
+.card-bodey table {
+  width: 100%; /* Full width of the container */
+  border-collapse: collapse; /* Collapses borders into a single border */
+  font-family: "DM Serif Display", serif;
+  font-size: 15px;
+}
+
+.card-bodey th, .card-bodey td {
+  border: 1px solid #ddd; /* Border color and style */
+  padding: 5px; /* Padding inside cells */
+  text-align: center; /* Align text to the left */
+}
+
+.card-bodey th {
+  background-color: #f4f4f4; /* Header background color */
+}
+
+.card-bodey tr:nth-child(even) {
+  background-color: #f2f2f2; /* Stripe rows with background color */
+}
+
+.card-bodey tr:hover {
+  background-color: #e0e0e0; /* Highlight row on hover */
+}
+
+/* Optional: Responsive Design */
+@media (max-width: 768px) {
+  .card-bodey table, .card-bodey th, .card-bodey td {
+    display: block; /* Stack cells vertically */
+    width: 100%; /* Full width */
+    box-sizing: border-box; /* Include padding and border in the width */
+  }
+  
+  .card-bodey th {
+    position: absolute; /* Position headers outside of table */
+    top: -9999px; /* Hide headers */
+    left: -9999px;
+  }
+  
+  .card-bodey tr {
+    border: 1px solid #ddd; /* Add border to rows */
+    display: block;
+    margin-bottom: 10px; /* Space between rows */
+  }
+  
+  .card-bodey td {
+    border: none;
+    position: relative;
+    padding-left: 50%; /* Space for labels */
+    text-align: right;
+  }
+  
+  .card-bodey td::before {
+    content: attr(data-label); /* Label for each cell */
+    position: absolute;
+    left: 0;
+    width: 45%; /* Space for label */
+    padding-right: 10px; /* Space between label and value */
+    white-space: nowrap; /* Prevent text wrapping */
+    font-weight: bold; /* Make label text bold */
+  }
+}
