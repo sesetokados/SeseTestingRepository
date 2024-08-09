@@ -6,10 +6,6 @@ class Libkoto_model extends CI_Model {
         $this->load->helper('url');
         //eto tesintg lang
     }
-asd
-addslashes
-asdd
-
     public function acquisition() { 
         $data = array(
             'title' => $this->input->post('title'),
