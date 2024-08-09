@@ -4,6 +4,7 @@ class Libkoto_model extends CI_Model {
     {
         $this->load->database();
         $this->load->helper('url');
+        //eto tesintg lang
     }
 
     public function acquisition() { 
