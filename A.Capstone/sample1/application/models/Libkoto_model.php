@@ -5,7 +5,9 @@ class Libkoto_model extends CI_Model {
         $this->load->database();
         $this->load->helper('url');
         //eto tesintg lang
+        //testing ng branch kung pano ba to gumagana
     }
+
     public function acquisition() { 
         $data = array(
             'title' => $this->input->post('title'),
